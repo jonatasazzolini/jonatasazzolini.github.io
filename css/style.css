@@ -252,9 +252,9 @@ header img.bg{
 }
 .carousel .item img{
 	min-width: 100%;
-	min-height: 100%;
+	height: auto;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	position: relative;
 	top: 0;
 	right: 0;
@@ -419,14 +419,10 @@ header img.bg{
 	box-shadow: inset 0px -4px 0px 0px rgba(127,219,7,.9),inset 0px 2px 0px 0px rgba(235,255,0,0.9);
 	transition: all .1s linear;
 }
-#como-funciona,
-#planos-precos{
+#como-funciona{
 	background: #fff;
 	padding: 40px 0;
 	color: #555;
-}
-#planos-precos{
-	background: #ebebeb;
 }
 #como-funciona .title,
 #planos-precos .title{
@@ -459,13 +455,157 @@ header img.bg{
 	font-weight: 400;
 	margin-top: 10px;
 }
-/*collapsed para iPad*/
-@media (max-width: 991px) {
-
+#planos-precos{
+	background: rgba(18, 188, 171, .8);
+	position: relative;
+	padding: 40px 0;
+	overflow: hidden;
 }
+#planos-precos .title p{
+	color: #fff;
+}
+#planos-precos .title i{
+	color: #fff;
+}
+.bg-planos{
+	background: url("../img/bg-planos.jpg")no-repeat center center fixed;
+	min-width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-attachment: fixed;
+}
+.box-planos{
+	background: #fff;
+	border-radius: 6px;
+	border: 2px solid #c1f900;
+	padding: 0 0 40px 0 ;
+	text-align: center;
+	color: #555;
+	margin-bottom: 10px;
+}
+.box-planos .title{
+	background: #c1f900;
+	color: #000;
+	font-size: 30px;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	display: block;
+	padding-top: 15px;
+	font-weight: 600;
+}
+.box-planos .title .base-left img,
+.box-planos .title .base-right img{
+	position: absolute;
+	bottom: -55px;
+	left: -1px;
+	width: 100%;
+}
+.box-planos .title .base-right img{
+	left: 0;
+	right: -1px;
+}
+.box-planos ul{
+	margin-top: 40px;
+	padding: 0 15px;
+	font-size: 16px;
+}
+.box-planos i{
+	color: #67d723;
+}
+.box-planos.fit b,
+.box-planos.fit .preco{
+	color: #ff7e00;
+}
+.box-planos.plus b,
+.box-planos.plus .preco{
+	color: #683782;
+}
+.box-planos.personal b,
+.box-planos.personal .preco{
+	color: #12bcab;
+}
+.box-planos ul li{
+	font-weight: 400;
+	border-bottom: 1px solid #e1e1e1;
+	padding: 10px 0;
+}
+.box-planos li.no,
+.box-planos li.no b{
+	color: #cecece;
+}
+.box-planos .preco{
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 10px;
+  margin: 40px;
+}
+.box-planos .preco b{
+	font-size: 35px;
+}
+.box-planos .preco span{
+	font-size: 16px;
+	color: #555;
+}
+.box-planos a{
+	border-radius: 100px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 15px 46px;
+	transition: all .1s linear;
+	font-weight: 400;
+}
+.box-planos.fit a{
+	color: #ff7e00;
+	border: 2px solid #ff7e00;
+}
+.box-planos.fit:hover a,
+.box-planos.fit a:hover{
+	color: #fff;
+	background: #ff7e00;
+	transition: all .1s linear;
+}
+.box-planos.plus a{
+	color: #683782;
+	border: 2px solid #683782;
+}
+.box-planos.plus:hover a,
+.box-planos.plus a:hover{
+	color: #fff;
+	background: #683782;
+	transition: all .1s linear;
+}
+.box-planos.personal a{
+	color: #12bcab;
+	border: 2px solid #12bcab;
+}
+.box-planos.personal:hover a,
+.box-planos.personal a:hover{
+	color: #fff;
+	background: #12bcab;
+	transition: all .1s linear;
+}
+#planos-precos .leg{
+	color: rgba(0, 0, 0, 0.65);
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+}
+
 /*1024*/
 @media (min-width: 992px) and (max-width: 1199px) {
-
+	.box-planos ul{
+		margin-top: 0px;
+	}
 }
 /*tablet*/
 @media (max-width: 992px) {
@@ -535,6 +675,45 @@ header img.bg{
 		padding-left: 0 !important;
     padding-right: 0 !important;
 	}
+	.box-planos .title{
+		padding-top: 10px;
+	}
+	.box-planos ul{
+		margin-top: 0px;
+		font-size: 14px;
+	}
+	#planos-precos .col-sm-4{
+		padding-left: 5px;
+    padding-right: 5px;
+	}
+	.box-planos .preco{
+		font-size: 16px;
+	}
+	.box-planos .preco b{
+		font-size: 28px;
+	}
+	.box-planos .preco span{
+		font-size: 12px;
+	}
+	.box-planos .title .base-left img,
+	.box-planos .title .base-right img{
+		bottom: -35px;
+	}
+	.box-planos.fit a{
+		color: #fff;
+		background: #ff7e00;
+	}
+	.box-planos.plus a{
+		color: #fff;
+		background: #683782;
+	}
+	.box-planos.personal a{
+		color: #fff;
+		background: #12bcab;
+	}
+	#planos-precos .leg{
+		font-size: 12px;
+	}
 }
 /*mobile*/
 @media (max-width: 765px) {
@@ -547,7 +726,7 @@ header img.bg{
 		min-height: 400px;
 	}
 	.carousel .item img{
-		/*min-width: 100%;*/
+		width: 100%;
 	}
 	.navbar-default .navbar-collapse,
 	.navbar-default .navbar-form {
@@ -656,14 +835,30 @@ header img.bg{
 	.carousel-indicators {
     bottom: 200px;
 	}
-	#como-funciona .title p{
+	#como-funciona .title p,
+	#planos-precos .title p{
 		font-size: 30px;
 		letter-spacing: 0px;
 		line-height: 40px;
 		margin-top: 20px;
 	}
-	#como-funciona .title i{
+	#planos-precos .title p{
+		margin-top: 0;
+	}
+	#como-funciona .title i,
+	#planos-precos .title i{
 		font-size: 15px;
+	}
+	#planos-precos .col-xs-12{
+		padding-left: 15px;
+    padding-right: 15px;
+	}
+	#planos-precos .box-planos .title{
+		margin-bottom: 10px;
+	}
+	.box-planos li.no,
+	.box-planos li.no b{
+		display: none;
 	}
 }
 /*viewport xl*/
