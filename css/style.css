@@ -705,6 +705,9 @@ border-right: 1200px solid transparent;
 		padding-left: 0 !important;
     padding-right: 0 !important;
 	}
+	#como-funciona {
+    padding: 0px 0 0 0;
+	}
 	#como-funciona img{
 		width: 55%;
 	}
@@ -870,6 +873,9 @@ border-right: 1200px solid transparent;
 	.carousel-indicators {
     bottom: 230px;
 	}
+	#como-funciona {
+		padding: 0px 0 0 0;
+	}
 	#como-funciona .title p,
 	#planos-precos .title p{
 		font-size: 30px;
@@ -877,8 +883,11 @@ border-right: 1200px solid transparent;
 		line-height: 40px;
 		margin-top: 20px;
 	}
-	#planos-precos {
-    padding: 70px 0 40px 0;
+	#como-funciona .title p{
+		margin-top: 0px;
+	}
+	#planos-precos{
+    padding: 70px 0 60px 0;
 	}
 	#planos-precos .title p{
 		margin-top: 0;
