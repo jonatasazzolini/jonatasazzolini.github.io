@@ -186,7 +186,7 @@ header img.bg{
 	height: 30px;
 	border-radius: 100px;
 	color: #000;
-	background: #313131;
+	background: #555;
 	margin-top: 10px;
 	font-size: 18px;
 	text-align: center;
@@ -227,11 +227,11 @@ header img.bg{
 	float: right;
 }
 .box-personal-top button a{
-	color: #7b7b7b;
+	color: #888;
 	font-size: 11px;
 	font-weight: 400;
 	padding: 5px 10px;
-	border: 2px solid #7b7b7b;
+	border: 2px solid #888;
 	border-radius: 100px;
 	transition: all .1s linear;
 }
@@ -421,7 +421,7 @@ header img.bg{
 }
 #como-funciona{
 	background: #fff;
-	padding: 40px 0;
+	padding: 40px 0 0 0;
 	color: #555;
 }
 #como-funciona .title,
@@ -458,7 +458,7 @@ header img.bg{
 #planos-precos{
 	background: rgba(18, 188, 171, .8);
 	position: relative;
-	padding: 40px 0;
+	padding: 140px 0 80px 0;
 	overflow: hidden;
 }
 #planos-precos .title p{
@@ -500,7 +500,7 @@ header img.bg{
 	height: 60px;
 	display: block;
 	padding-top: 15px;
-	font-weight: 600;
+	font-weight: 400;
 }
 .box-planos .title .base-left img,
 .box-planos .title .base-right img{
@@ -600,17 +600,47 @@ header img.bg{
 	font-weight: 400;
 	text-align: center;
 }
+.triangle-topleft{
+    width: 100%;
+    height: 0;
+    border-top: 150px solid white;
+    border-right: 1900px solid transparent;
+    float: left;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+}
+.triangle-topright{
+    width: 100%;
+    height: 0;
+		border-bottom: 70px solid white;
+border-right: 1200px solid transparent;
+    float: left;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index: 999;
+}
+.carousel-indicators{
+	bottom: 50px;
+}
 
 /*1024*/
 @media (min-width: 992px) and (max-width: 1199px) {
 	.box-planos ul{
 		margin-top: 0px;
 	}
+	.box-planos .title .base-left img,
+	.box-planos .title .base-right img{
+		bottom: -45px;
+	}
 }
 /*tablet*/
 @media (max-width: 992px) {
 	header{
-		min-height: 480px;
+		min-height: 500px;
 	}
 	.navbar-nav > li > a{
 		font-size: 12px;
@@ -656,7 +686,7 @@ header img.bg{
 		font-size: 20px;
 	}
 	.carousel-indicators{
-		bottom: 120px;
+		bottom: 160px;
 	}
 	.seta-carousel {
     top: 40%;
@@ -674,6 +704,9 @@ header img.bg{
 	.menu-mobile.col-xs-12{
 		padding-left: 0 !important;
     padding-right: 0 !important;
+	}
+	#como-funciona img{
+		width: 55%;
 	}
 	.box-planos .title{
 		padding-top: 10px;
@@ -723,7 +756,7 @@ header img.bg{
 		margin: 0;;
 	}
 	header{
-		min-height: 400px;
+		min-height: 440px;
 	}
 	.carousel .item img{
 		width: 100%;
@@ -835,7 +868,7 @@ header img.bg{
 		top: 70px;
 	}
 	.carousel-indicators {
-    bottom: 200px;
+    bottom: 230px;
 	}
 	#como-funciona .title p,
 	#planos-precos .title p{
@@ -843,6 +876,9 @@ header img.bg{
 		letter-spacing: 0px;
 		line-height: 40px;
 		margin-top: 20px;
+	}
+	#planos-precos {
+    padding: 70px 0 40px 0;
 	}
 	#planos-precos .title p{
 		margin-top: 0;
@@ -862,11 +898,15 @@ header img.bg{
 	.box-planos li.no b{
 		display: none;
 	}
+	.triangle-topleft{
+		border-top: 85px solid white;
+		border-right: 620px solid transparent;
+	}
 }
 /*viewport xl*/
 @media (min-width: 1399px) {
 	header{
-		min-height: 700px;
+		min-height: 900px;
 	}
 	.chamada-principal {
     font-size: 60px;
@@ -876,7 +916,11 @@ header img.bg{
 		top: 350px;
 	}
 	.carousel-indicators{
-		bottom: -80px;
+		bottom: -180px;
+	}
+	.triangle-topright{
+		border-bottom: 120px solid white;
+		border-right: 1920px solid transparent;
 	}
 }
 /*animacoes*/
