@@ -802,7 +802,8 @@ header img.bg{
     letter-spacing: 0px;
 	}
 	.box-singup p{
-		font-size: 14px;
+		font-size: 16px;
+		font-weight: 400;
 	}
 	.box-singup {
     top: 200px;
@@ -818,7 +819,8 @@ header img.bg{
     padding: 0 10px;
 	}
 	.box-singup span {
-    font-size: 12px;
+    font-size: 14px;
+		font-weight: 400;
 	}
 	.chamada-principal span{
 		font-size: 24px;
