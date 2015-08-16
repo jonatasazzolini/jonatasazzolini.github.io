@@ -193,31 +193,36 @@ header img.bg{
 	transition: all .1s linear;
 }
 .box-personal-top li:hover .fa-facebook,
-.box-personal-top:hover li .fa-facebook{
+.box-personal-top:hover li .fa-facebook,
+footer .redes li a i.fa-facebook{
 	background: #3a5795;
 	color: #fff;
 	transition: all .1s linear;
 }
 .box-personal-top li:hover .fa-twitter,
-.box-personal-top:hover li .fa-twitter{
+.box-personal-top:hover li .fa-twitter,
+footer .redes li a i.fa-twitter{
 	background: #55acee;
 	color: #fff;
 	transition: all .1s linear;
 }
 .box-personal-top li:hover .fa-youtube,
-.box-personal-top:hover li .fa-youtube{
+.box-personal-top:hover li .fa-youtube,
+footer .redes li a i.fa-youtube{
 	background: #cc181e;
 	color: #fff;
 	transition: all .1s linear;
 }
 .box-personal-top li:hover .fa-pinterest-p,
-.box-personal-top:hover li .fa-pinterest-p{
+.box-personal-top:hover li .fa-pinterest-p,
+footer .redes li a i.fa-pinterest-p{
 	background: #d01d15;
 	color: #fff;
 	transition: all .1s linear;
 }
 .box-personal-top li:hover .fa-instagram,
-.box-personal-top:hover li .fa-instagram{
+.box-personal-top:hover li .fa-instagram,
+footer .redes li a i.fa-instagram{
 	background: #125688;
 	color: #fff;
 	transition: all .1s linear;
@@ -601,30 +606,83 @@ header img.bg{
 	text-align: center;
 }
 .triangle-topleft{
-    width: 100%;
-    height: 0;
-    border-top: 150px solid white;
-    border-right: 1900px solid transparent;
-    float: left;
-		position: absolute;
-		top: 0;
-		right: 0;
-		left: 0;
+  width: 100%;
+  height: 0;
+  border-top: 150px solid white;
+  border-right: 1900px solid transparent;
+  float: left;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
 }
 .triangle-topright{
-    width: 100%;
-    height: 0;
-		border-bottom: 70px solid white;
-border-right: 1200px solid transparent;
-    float: left;
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		z-index: 999;
+  width: 100%;
+  height: 0;
+	border-bottom: 70px solid white;
+	border-right: 1200px solid transparent;
+  float: left;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 999;
 }
 .carousel-indicators{
 	bottom: 50px;
+}
+.form-control{
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	-webkit-transition: none !important;
+	-o-transition: none !important;
+}
+footer{
+	background: #fff;
+	padding: 20px 0;
+}
+footer .direitos{
+	text-align: center;
+	font-size: 12px;
+	font-weight: 400;
+	color: #555;
+}
+footer .direitos a{
+	color: #000;
+	font-weight: 500;
+}
+footer .navbar-right{
+	float: left !important;
+}
+footer .nav a{
+	color: #000;
+	font-weight: 500;
+}
+.nav > li > a:hover,
+.nav > li > a:focus{
+	background: transparent;
+}
+footer .redes li{
+	display: inline-block;
+	font-weight: 400;
+	color: #555;
+}
+footer .redes{
+	text-align: right;
+}
+footer .redes li i{
+    padding-top: 7px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    transition: all .1s linear;
+		opacity: .8;
+}
+footer .redes li i:hover{
+		opacity: 1;
 }
 
 /*1024*/
@@ -749,6 +807,28 @@ border-right: 1200px solid transparent;
 	}
 	#planos-precos .leg{
 		font-size: 12px;
+	}
+	footer .navbar-right{
+		float: none !important;
+	}
+	footer ul.menu-footer{
+		text-align: center;
+		width: 100%;
+	}
+	footer ul.menu-footer li{
+		display: inline-block;
+		margin: 0 10px;
+	}
+	footer ul.menu-footer li a{
+		color: #000;
+		font-size: 14px;
+		font-weight: 400;
+	}
+	footer .redes{
+		text-align: center;
+	}
+	footer .redes li i{
+		opacity: 1;
 	}
 }
 /*mobile*/
@@ -911,6 +991,13 @@ border-right: 1200px solid transparent;
 		border-top: 85px solid white;
 		border-right: 620px solid transparent;
 	}
+	footer ul.menu-footer li a{
+		font-size: 12px;
+		font-weight: 400;
+	}
+	footer ul.menu-footer li {
+    margin: 0 5px;
+	}
 }
 /*viewport xl*/
 @media (min-width: 1399px) {
@@ -930,6 +1017,9 @@ border-right: 1200px solid transparent;
 	.triangle-topright{
 		border-bottom: 120px solid white;
 		border-right: 1920px solid transparent;
+	}
+	#planos-precos{
+		padding: 140px 0 120px 0;
 	}
 }
 /*animacoes*/
