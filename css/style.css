@@ -430,19 +430,22 @@ footer .redes li a i.fa-instagram{
 	color: #555;
 }
 #como-funciona .title,
-#planos-precos .title{
+#planos-precos .title,
+#beneficios .title{
 	text-align: center;
 	margin-bottom: 20px;
 }
 #como-funciona .title p,
-#planos-precos .title p{
+#planos-precos .title p,
+#beneficios .title p{
 	font-size: 50px;
 	letter-spacing: -4px;
 	line-height: 20px;
 	margin-top: 20px;
 }
 #como-funciona .title i,
-#planos-precos .title i{
+#planos-precos .title i,
+#beneficios .title i{
 	font-size: 25px;
 }
 #como-funciona img{
@@ -599,7 +602,8 @@ footer .redes li a i.fa-instagram{
 	background: #12bcab;
 	transition: all .1s linear;
 }
-#planos-precos .leg{
+#planos-precos .leg,
+#beneficios .leg{
 	color: rgba(0, 0, 0, 0.65);
 	font-size: 14px;
 	font-weight: 400;
@@ -628,6 +632,9 @@ footer .redes li a i.fa-instagram{
 	left: 0;
 	z-index: 999;
 }
+#planos-precos .triangle-topright{
+	border-bottom: 70px solid #f6f6f3;
+}
 .carousel-indicators{
 	bottom: 50px;
 }
@@ -637,9 +644,12 @@ footer .redes li a i.fa-instagram{
 	-webkit-transition: none !important;
 	-o-transition: none !important;
 }
+#beneficios .leg{
+	margin-top: 70px;
+}
 footer{
 	background: #fff;
-	padding: 20px 0;
+	padding: 10px 0 20px 0;
 }
 footer .direitos{
 	text-align: center;
@@ -656,7 +666,7 @@ footer .navbar-right{
 }
 footer .nav a{
 	color: #000;
-	font-weight: 500;
+	font-weight: 400;
 }
 .nav > li > a:hover,
 .nav > li > a:focus{
@@ -684,7 +694,55 @@ footer .redes li i{
 footer .redes li i:hover{
 		opacity: 1;
 }
-
+#beneficios{
+	padding: 20px 0 10px 0;
+	background: #f6f6f3;
+}
+#beneficios .icon-beneficio{
+	width: 100%;
+}
+#beneficios .icon-beneficio img{
+	width: 60%;
+	float: right;
+}
+.box-beneficio{
+	margin-top: 40px;
+	color: #555;
+}
+.box-beneficio .title{
+	text-align: left !important;
+	font-size: 25px;
+	line-height: 25px;
+}
+.box-beneficio span{
+	font-size: 14px;
+	font-weight: 400;
+}
+.btn-b{
+	margin-top: 60px;
+}
+#beneficios a{
+	border-radius: 100px;
+	color: #000;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 20px 46px;
+	transition: all .1s linear;
+	font-weight: 400;
+	background: #c1f900;
+}
+#beneficios a:hover{
+	-webkit-box-shadow: inset 0px -4px 0px 0px rgba(127,219,7,.9),inset 0px 2px 0px 0px rgba(235,255,0,0.9);
+	-moz-box-shadow: inset 0px -4px 0px 0px rgba(127,219,7,.9),inset 0px 2px 0px 0px rgba(235,255,0,0.9);
+	box-shadow: inset 0px -4px 0px 0px rgba(127,219,7,.9),inset 0px 2px 0px 0px rgba(235,255,0,0.9);
+	transition: all .1s linear;
+}
+#beneficios a:hover{
+	transition: all .1s linear;
+}
+.btn-b-exGratis{
+	margin-top: 60px;
+}
 /*1024*/
 @media (min-width: 992px) and (max-width: 1199px) {
 	.box-planos ul{
@@ -693,6 +751,29 @@ footer .redes li i:hover{
 	.box-planos .title .base-left img,
 	.box-planos .title .base-right img{
 		bottom: -45px;
+	}
+	footer .navbar-right{
+		float: none !important;
+	}
+	footer ul.menu-footer{
+		text-align: center;
+		width: 100%;
+		margin-top: 10px;
+	}
+	footer ul.menu-footer li{
+		display: inline-block;
+		margin: 0 10px;
+	}
+	footer ul.menu-footer li a{
+		color: #000;
+		font-size: 14px;
+		font-weight: 400;
+	}
+	footer .redes{
+		text-align: center;
+	}
+	footer .redes li i{
+		opacity: 1;
 	}
 }
 /*tablet*/
@@ -807,6 +888,21 @@ footer .redes li i:hover{
 	}
 	#planos-precos .leg{
 		font-size: 12px;
+	}
+	#beneficios .icon-beneficio img{
+		width: 100%;
+	}
+	#beneficios .title p{
+		line-height: 20px;
+		font-size: 40px;
+	}
+	#beneficios .title i{
+		font-size: 18px;
+	}
+	#beneficios .title{
+    font-size: 20px;
+    line-height: 20px;
+		margin-bottom: 10px;
 	}
 	footer .navbar-right{
 		float: none !important;
@@ -957,13 +1053,15 @@ footer .redes li i:hover{
 		padding: 0px 0 0 0;
 	}
 	#como-funciona .title p,
-	#planos-precos .title p{
+	#planos-precos .title p,
+	#beneficios .title p{
 		font-size: 30px;
 		letter-spacing: 0px;
 		line-height: 40px;
 		margin-top: 20px;
 	}
-	#como-funciona .title p{
+	#como-funciona .title p,
+	#beneficios .title p{
 		margin-top: 0px;
 	}
 	#planos-precos{
@@ -973,7 +1071,8 @@ footer .redes li i:hover{
 		margin-top: 0;
 	}
 	#como-funciona .title i,
-	#planos-precos .title i{
+	#planos-precos .title i,
+	#beneficios .title i{
 		font-size: 15px;
 	}
 	#planos-precos .col-xs-12{
@@ -990,6 +1089,21 @@ footer .redes li i:hover{
 	.triangle-topleft{
 		border-top: 85px solid white;
 		border-right: 620px solid transparent;
+	}
+	#beneficios{
+		padding: 0px 0 10px 0;
+	}
+	.box-beneficio span{
+		font-size: 12px;
+	}
+	#beneficios a{
+		font-size: 16px;
+    padding: 20px 22px;
+	}
+	#beneficios .icon-beneficio img{
+		width: 130%;
+		max-width: 125px;
+		float: left;
 	}
 	footer ul.menu-footer li a{
 		font-size: 12px;
