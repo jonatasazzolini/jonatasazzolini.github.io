@@ -42,7 +42,7 @@ src: url('../fonts/gothamrnd-light/gothamrnd-light.eot?#iefix') format('embedded
    url('../fonts/gothamrnd-light/gothamrnd-light.woff') format('woff'),
    url('../fonts/gothamrnd-light/gothamrnd-light.ttf') format('truetype'),
    url('../fonts/gothamrnd-light/gothamrnd-light.svg#gothamrnd-light') format('svg');
-font-weight: 100;
+font-weight: 200;
 font-style: normal;
 }
 .font-gothamrnd-light{
@@ -291,7 +291,7 @@ footer .redes li a i.fa-instagram{
 	position: relative;
 	top: 0;
 	font-size: 50px;
-	font-weight: 100;
+	font-weight: 200;
 	line-height: 50px;
 	letter-spacing: -4px;
 }
@@ -307,7 +307,7 @@ footer .redes li a i.fa-instagram{
 .box-singup p{
 	font-size: 30px;
 	color: #c1f900;
-	font-weight: 100;
+	font-weight: 200;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
 .box-singup .form-group{
@@ -361,7 +361,7 @@ footer .redes li a i.fa-instagram{
 .box-singup span{
 	font-size: 18px;
 	color: #fff;
-	font-weight: 100;
+	font-weight: 200;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 .box-singup span a{
@@ -857,7 +857,7 @@ footer .redes li i:hover{
 	}
 	.chamada-principal{
 		font-size: 32px;
-		font-weight: 100;
+		font-weight: 200;
 		line-height: 40px;
 		letter-spacing: -2px;
 	}
