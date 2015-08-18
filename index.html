@@ -12,11 +12,11 @@
       <meta property="og:description" content="..." /><!--share descricao p/ o facebook-->
       <meta property="og:url" ncontent="http://treinei.com/" /><!--share link p/ o facebook-->
       <meta property="og:image" content="http://..." /><!--share image p/ o facebook-->
-      <link rel="icon" href="favicon.ico" type="img/img/treinei.ico">
-      <link rel="shortcut icon" href="favicon.ico" type="img/treinei.ico">
+      <!-- <link rel="icon" href="favicon.ico" type="img/treinei.ico"> -->
+      <!-- <link rel="shortcut icon" href="favicon.ico" type="img/treinei.ico"> -->
       <link type='text/css' href="css/bootstrap.css" rel="stylesheet" media="screen"><!--css bootstrap-->
       <link type='text/css' href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"><!--css font awesome-->
-      <link type='text/css' href="icomoon/style.css" rel="stylesheet" media="screen" /><!--css font icomoon-->
+      <!-- <link type='text/css' href="icomoon/style.css" rel="stylesheet" media="screen" />--><!--css font icomoon-->
       <link type='text/css' href="css/style.css" rel="stylesheet" media="screen" /><!--css style default-->
    </head>
     <body>
@@ -33,7 +33,7 @@
               </ul>
             </div>
             <div class="col-sm-6 col-md-6">
-              <button><a href="#">SOU PERSONAL TRAINER</a></button>
+              <button><a href="#" data-toggle="modal" data-target="#em-breve">SOU PERSONAL TRAINER</a></button>
               <div class="personal-top"><img src="img/personal-top.jpg" alt=""></div>
             </div>
           </div>
@@ -62,8 +62,8 @@
                     <ul class="nav navbar-nav navbar-right">
                       <li><a href="#planos-precos">Planos e Preços</a><div class="link-hover hidden-xs hidden-sm"></div></li>
                       <li><a href="#como-funciona">Como Funciona</a><div class="link-hover hidden-xs hidden-sm"></div></li>
-                      <li><a href="#">Blog</a><div class="link-hover hidden-xs hidden-sm"></div></li>
-                      <li><a href="#">Contato</a><div class="link-hover hidden-xs hidden-sm"></div></li>
+                      <li><a href="#" data-toggle="modal" data-target="#em-breve">Blog</a><div class="link-hover hidden-xs hidden-sm"></div></li>
+                      <li><a href="#" data-toggle="modal" data-target="#em-breve">Contato</a><div class="link-hover hidden-xs hidden-sm"></div></li>
                       <li><a href="#" class="btn-login">Entre <span>/</span> Cadastre-se</a></li>
                     </ul>
                   </div><!-- /.navbar-collapse -->
@@ -397,19 +397,21 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-8">
+              <!-- desk -->
               <ul class="nav navbar-nav navbar-right visible-md-block visible-lg-block">
-                <li><a href="#">Quem Somos?</a><div class="link-hover hidden-xs hidden-sm"></div></li>
-                <li><a href="#">Dúvida</a><div class="link-hover hidden-xs hidden-sm"></div></li>
-                <li><a href="#">Blog</a><div class="link-hover hidden-xs hidden-sm"></div></li>
-                <li><a href="#">Contato</a><div class="link-hover hidden-xs hidden-sm"></div></li>
-                <li><a href="#">É Personal Trainer?</a><div class="link-hover hidden-xs hidden-sm"></div></li>
+                <li><a href="#" data-toggle="modal" data-target="#em-breve">Quem Somos?</a><div class="link-hover hidden-xs hidden-sm"></div></li>
+                <li><a href="#" data-toggle="modal" data-target="#em-breve">Dúvida</a><div class="link-hover hidden-xs hidden-sm"></div></li>
+                <li><a href="#" data-toggle="modal" data-target="#em-breve">Blog</a><div class="link-hover hidden-xs hidden-sm"></div></li>
+                <li><a href="#" data-toggle="modal" data-target="#em-breve">Contato</a><div class="link-hover hidden-xs hidden-sm"></div></li>
+                <li><a href="#" data-toggle="modal" data-target="#em-breve">É Personal Trainer?</a><div class="link-hover hidden-xs hidden-sm"></div></li>
               </ul>
+              <!-- tablet / mobile -->
               <ul class="menu-footer visible-sm-inline-block visible-xs-inline-block">
-                <li><a href="#">Quem Somos?</a></li>
-                <li><a href="#">Dúvida</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">É Personal Trainer?</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#em-breve">Quem Somos?</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#em-breve">Dúvida</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#em-breve">Blog</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#em-breve">Contato</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#em-breve">É Personal Trainer?</a></li>
               </ul>
             </div>
             <div class="col-sm-12 col-md-4">
@@ -425,11 +427,53 @@
           </div>
           <div class="row">
             <div class="col-sm-12 col-md-12">
-              <div class="direitos">2015 Treinei ®  - <a href="#">Política de Privacidade</a> e <a href="#">Termos de Uso</a> - Todos os direitos reservados</div>
+              <div class="direitos">2015 Treinei ®  - <a href="#" data-toggle="modal" data-target="#em-breve">Política de Privacidade</a> e <a href="#" data-toggle="modal" data-target="#em-breve">Termos de Uso</a> - Todos os direitos reservados</div>
             </div>
           </div>
         </div>
       </footer>
+
+      <!-- top fixed -->
+      <div data-spy="affix" data-offset-top="500" id="nav">
+        <div class="top-fixed">
+          <div class="container menu">
+            <div class="row">
+              <div class="menu-mobile col-xs-12 col-sm-12 col-md-12">
+                <nav class="navbar navbar-default">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img src="img/logo-treinei-amarelo.svg" alt="treinei"></a>
+                  </div>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#planos-precos">Planos e Preços</a><div class="link-hover hidden-xs hidden-sm"></div></li>
+                    <li><a href="#como-funciona">Como Funciona</a><div class="link-hover hidden-xs hidden-sm"></div></li>
+                    <li><a href="#" data-toggle="modal" data-target="#em-breve">Blog</a><div class="link-hover hidden-xs hidden-sm"></div></li>
+                    <li><a href="#" data-toggle="modal" data-target="#em-breve">Contato</a><div class="link-hover hidden-xs hidden-sm"></div></li>
+                    <li><a href="#" class="btn-login">Entre <span>/</span> Cadastre-se</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="em-breve" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+            </div>
+            <div class="modal-body">
+              <p>EM BREVE</p>
+              <p>Estamos construnindo uma nova experiência para surpreender você ;)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
@@ -449,6 +493,7 @@
           });
         });
       </script>
+
 
     </body>
 </html>
