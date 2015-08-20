@@ -171,6 +171,7 @@ header img.bg{
 	width: 100%;
 	height: 52px;
 	background: #000;
+	transition: all .2s linear;
 }
 .box-personal-top ul{
 	margin-left: 15px;
@@ -189,42 +190,42 @@ header img.bg{
 	margin-top: 10px;
 	font-size: 18px;
 	text-align: center;
-	transition: all .1s linear;
+	transition: all .2s linear;
 }
 .box-personal-top li:hover .fa-facebook,
 .box-personal-top:hover li .fa-facebook,
 footer .redes li a i.fa-facebook{
 	background: #3a5795;
 	color: #fff;
-	transition: all .1s linear;
+	transition: all .2s linear;
 }
 .box-personal-top li:hover .fa-twitter,
 .box-personal-top:hover li .fa-twitter,
 footer .redes li a i.fa-twitter{
 	background: #55acee;
 	color: #fff;
-	transition: all .1s linear;
+	transition: all .2s linear;
 }
 .box-personal-top li:hover .fa-youtube,
 .box-personal-top:hover li .fa-youtube,
 footer .redes li a i.fa-youtube{
 	background: #cc181e;
 	color: #fff;
-	transition: all .1s linear;
+	transition: all .2s linear;
 }
 .box-personal-top li:hover .fa-pinterest-p,
 .box-personal-top:hover li .fa-pinterest-p,
 footer .redes li a i.fa-pinterest-p{
 	background: #d01d15;
 	color: #fff;
-	transition: all .1s linear;
+	transition: all .2s linear;
 }
 .box-personal-top li:hover .fa-instagram,
 .box-personal-top:hover li .fa-instagram,
 footer .redes li a i.fa-instagram{
 	background: #125688;
 	color: #fff;
-	transition: all .1s linear;
+	transition: all .2s linear;
 }
 .personal-top,
 .box-personal-top button{
@@ -237,7 +238,7 @@ footer .redes li a i.fa-instagram{
 	padding: 5px 10px;
 	border: 2px solid #888;
 	border-radius: 100px;
-	transition: all .1s linear;
+	transition: all .2s linear;
 }
 .box-personal-top button{
 	margin: 15px 0px 0 15px;
@@ -246,7 +247,7 @@ footer .redes li a i.fa-instagram{
 	color: #000;
 	background-color: #c1f900;
 	border-color: #c1f900;
-	transition: all .1s linear;
+	transition: all .2s linear;
 }
 .carousel{
 	height: 600px;
@@ -290,7 +291,7 @@ footer .redes li a i.fa-instagram{
 .chamada-principal{
 	position: relative;
 	top: 0;
-	font-size: 50px;
+	font-size: 48px;
 	font-weight: 200;
 	line-height: 50px;
 	letter-spacing: -4px;
@@ -427,6 +428,7 @@ footer .redes li a i.fa-instagram{
 	background: #fff;
 	padding: 40px 0 0 0;
 	color: #555;
+	text-align: center;
 }
 #como-funciona .title,
 #planos-precos .title,
@@ -693,6 +695,11 @@ footer .redes li i{
 footer .redes li i:hover{
 		opacity: 1;
 }
+footer .leg{
+	font-size: 12px;
+	text-align: center;
+	font-weight: 400;
+}
 #beneficios{
 	padding: 20px 0 10px 0;
 	background: #f6f6f3;
@@ -739,6 +746,11 @@ footer .redes li i:hover{
 }
 #beneficios a:hover{
 	transition: all .1s linear;
+}
+#beneficios .box-beneficio i{
+	font-size: 8px;
+	position: relative;
+	top: -5px;
 }
 .btn-b-exGratis{
 	margin-top: 60px;
@@ -953,6 +965,11 @@ footer .redes li i:hover{
     line-height: 20px;
 		margin-bottom: 10px;
 	}
+	#beneficios .box-beneficio i{
+		font-size: 8px;
+		position: relative;
+		top: -5px;
+	}
 	footer .navbar-right{
 		float: none !important;
 	}
@@ -1153,6 +1170,11 @@ footer .redes li i:hover{
 		width: 130%;
 		max-width: 125px;
 		float: left;
+	}
+	#beneficios .box-beneficio i{
+		font-size: 8px;
+		position: relative;
+		top: -5px;
 	}
 	footer ul.menu-footer li a{
 		font-size: 12px;
